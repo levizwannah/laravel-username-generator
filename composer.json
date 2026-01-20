@@ -1,14 +1,15 @@
 {
-    "name": "luilliarcec/laravel-username-generator",
+    "name": "levizwannah/laravel-username-generator",
     "description": "Laravel Username Generator is a package that allows the versatile generation of user names, has a simple integration with Laravel.",
     "keywords": [
         "luilliarcec",
         "laravel-username-generator",
         "laravel",
         "username",
-        "generator"
+        "generator",
+        "laravel 12"
     ],
-    "homepage": "https://github.com/luilliarcec/laravel-username-generator",
+    "homepage": "https://github.com/levizwannah/laravel-username-generator",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -19,19 +20,19 @@
         }
     ],
     "require": {
-        "php": "^8.2|^8.3",
-        "laravel/framework": "^10.0|^11.0",
-        "spatie/laravel-package-tools": "^1.14.0"
+        "php": "^8.2|^8.3|^8.4",
+        "laravel/framework": "^10.0|^11.0|^12.0",
+        "spatie/laravel-package-tools": "^1.14"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
-        "orchestra/testbench": "^8.0|^9.0",
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
         "pestphp/pest": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "Luilliarcec\\LaravelUsernameGenerator\\": "src"
+            "LeviZwannah\\LaravelUsernameGenerator\\": "src"
         }
     },
     "autoload-dev": {
@@ -53,7 +54,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Luilliarcec\\LaravelUsernameGenerator\\UsernameGeneratorServiceProvider"
+                "LeviZwannah\\LaravelUsernameGenerator\\UsernameGeneratorServiceProvider"
             ]
         }
     },
