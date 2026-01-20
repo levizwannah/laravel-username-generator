@@ -1,11 +1,11 @@
-# Laravel Username Generator
+# Laravel Username Generator (A fork for compatibility with Laravel 12)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/levizwannah/laravel-username-generator.svg)](https://packagist.org/packages/levizwannah/laravel-username-generator)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/levizwannah/laravel-username-generator/run-tests.yml?branch=master&label=tests&style=flat-square)](https://github.com/levizwannah/laravel-username-generator/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/levizwannah/laravel-username-generator/fix-php-code-style-issues.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/levizwannah/laravel-username-generator/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/levizwannah/laravel-username-generator)](https://packagist.org/packages/levizwannah/laravel-username-generator)
 
-<a href="https://www.buymeacoffee.com/luilliarcec" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<a href="https://www.buymeacoffee.com/luilliarcec" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a> (Original Package Creator)
 
 Laravel Username Generator is a package that allows the versatile generation of usernames, has a simple integration
 with Laravel.
