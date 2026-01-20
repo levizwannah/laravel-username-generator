@@ -1,6 +1,6 @@
 <?php
 
-namespace Luilliarcec\LaravelUsernameGenerator\Exceptions;
+namespace LeviZwannah\LaravelUsernameGenerator\Exceptions;
 
 use Exception;
 

@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Luilliarcec\LaravelUsernameGenerator\UsernameGeneratorServiceProvider;
+use LeviZwannah\LaravelUsernameGenerator\UsernameGeneratorServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -14,7 +14,7 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
-        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
     }
 
     /**

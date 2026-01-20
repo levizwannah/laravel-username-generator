@@ -1,7 +1,7 @@
 <?php
 
-use Luilliarcec\LaravelUsernameGenerator\Drivers;
-use Luilliarcec\LaravelUsernameGenerator\Exceptions\UsernameGeneratorException;
+use LeviZwannah\LaravelUsernameGenerator\Drivers;
+use LeviZwannah\LaravelUsernameGenerator\Exceptions\UsernameGeneratorException;
 
 beforeEach(function () {
     $this->driver = new Drivers\Name();

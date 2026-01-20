@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
-use Luilliarcec\LaravelUsernameGenerator\Concerns\HasUsername;
+use LeviZwannah\LaravelUsernameGenerator\Concerns\HasUsername;
 use Tests\database\factories\CustomerFactory;
 
 class Customer extends Model

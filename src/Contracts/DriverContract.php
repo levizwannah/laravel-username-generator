@@ -1,8 +1,8 @@
 <?php
 
-namespace Luilliarcec\LaravelUsernameGenerator\Contracts;
+namespace LeviZwannah\LaravelUsernameGenerator\Contracts;
 
-use Luilliarcec\LaravelUsernameGenerator\Exceptions\UsernameGeneratorException;
+use LeviZwannah\LaravelUsernameGenerator\Exceptions\UsernameGeneratorException;
 
 interface DriverContract
 {

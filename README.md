@@ -1,9 +1,9 @@
 # Laravel Username Generator
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/luilliarcec/laravel-username-generator.svg)](https://packagist.org/packages/luilliarcec/laravel-username-generator)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/luilliarcec/laravel-username-generator/run-tests.yml?branch=master&label=tests&style=flat-square)](https://github.com/luilliarcec/laravel-username-generator/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/luilliarcec/laravel-username-generator/fix-php-code-style-issues.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/luilliarcec/laravel-username-generator/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/luilliarcec/laravel-username-generator)](https://packagist.org/packages/luilliarcec/laravel-username-generator)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/levizwannah/laravel-username-generator.svg)](https://packagist.org/packages/levizwannah/laravel-username-generator)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/levizwannah/laravel-username-generator/run-tests.yml?branch=master&label=tests&style=flat-square)](https://github.com/levizwannah/laravel-username-generator/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/levizwannah/laravel-username-generator/fix-php-code-style-issues.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/levizwannah/laravel-username-generator/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/levizwannah/laravel-username-generator)](https://packagist.org/packages/levizwannah/laravel-username-generator)
 
 <a href="https://www.buymeacoffee.com/luilliarcec" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
@@ -22,7 +22,7 @@ You can install the package via composer:
 ### Please follow this guide if you are going to update to the new version.
 
 ```bash
-composer require luilliarcec/laravel-username-generator
+composer require levizwannah/laravel-username-generator
 ```
 
 ## Upgrade
@@ -34,7 +34,7 @@ Upgrading to the new version is as easy as:
 
 ## Usage
 
-Add the Trait `Luilliarcec\LaravelUsernameGenerator\Concerns\HasUsername` to your Eloquent models in the
+Add the Trait `LeviZwannah\LaravelUsernameGenerator\Concerns\HasUsername` to your Eloquent models in the
 use username.
 
 Remember that you must have a field in your table where you can store the `username`, preferably it is recommended
@@ -42,7 +42,7 @@ make this field `unique`.
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Luilliarcec\LaravelUsernameGenerator\Concerns\HasUsername;
+use LeviZwannah\LaravelUsernameGenerator\Concerns\HasUsername;
 
 class User extends Model
 {
@@ -71,7 +71,7 @@ protected function getName(): string
 }
 ```
 
-**Remember the value of name cannot be empty `''`, this will throw an exception, just like using a driver 
+**Remember the value of name cannot be empty `''`, this will throw an exception, just like using a driver
 incorrect for an incorrect value, for example using the `Name` driver to generate usernames from an email.**
 
 With this, your model will now be configured to work with usernames.
@@ -89,11 +89,11 @@ protected function getLastName(): ?string
 }
 ```
 
-By default, the trait uses the driver `Luilliarcec\Laravel Username Generator\Drivers\Name`. This is modifiable
+By default, the trait uses the driver `LeviZwannah\LaravelUsernameGenerator\Drivers\Name`. This is modifiable
 overriding the `getUsernameDriver` method.
 
 ```php
-use Luilliarcec\LaravelUsernameGenerator\Drivers\Email;
+use LeviZwannah\LaravelUsernameGenerator\Drivers\Email;
 
 protected function getUsernameDriver(): DriverContract
 {
@@ -115,14 +115,14 @@ protected function transformUsername(string $username): string
 #### Support for customs drivers
 
 You can create a class that implement the
-interface `Luilliarcec\LaravelUsernameGenerator\Contracts\DriverContract`
+interface `LeviZwannah\LaravelUsernameGenerator\Contracts\DriverContract`
 and inside that class you can write all the logic to generate your username, remember to implement the make method that
 will be responsible for returning the username, for example:
 
 ```php
 namespace App\Support\Username\Drivers;
 
-use Luilliarcec\LaravelUsernameGenerator\Contracts\DriverContract;
+use LeviZwannah\LaravelUsernameGenerator\Contracts\DriverContract;
 
 class CustomDriver implements DriverContract
 {
@@ -196,7 +196,7 @@ $model = User::create(['email' => 'luilliarcec@gmail.com']);
 
 Can use docker-compose to run
 
-``` bash
+```bash
 docker-compose exec app composer test
 ```
 

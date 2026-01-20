@@ -1,6 +1,6 @@
 <?php
 
-namespace Luilliarcec\LaravelUsernameGenerator;
+namespace LeviZwannah\LaravelUsernameGenerator;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Luilliarcec\LaravelUsernameGenerator\Drivers;
+namespace LeviZwannah\LaravelUsernameGenerator\Drivers;
 
-use Luilliarcec\LaravelUsernameGenerator\Contracts\DriverContract;
-use Luilliarcec\LaravelUsernameGenerator\Exceptions\UsernameGeneratorException;
+use LeviZwannah\LaravelUsernameGenerator\Contracts\DriverContract;
+use LeviZwannah\LaravelUsernameGenerator\Exceptions\UsernameGeneratorException;
 
 class Name implements DriverContract
 {
@@ -30,7 +30,7 @@ class Name implements DriverContract
         $first_lastname = $this->getFirstLastname($lastname_array);
         $first_second_lastname = $this->getFirstLetterSecondLastname($lastname_array);
 
-        return mb_strtolower($first_letter.$first_lastname.$first_second_lastname, 'UTF-8');
+        return mb_strtolower($first_letter . $first_lastname . $first_second_lastname, 'UTF-8');
     }
 
     /**

@@ -1,13 +1,13 @@
 <?php
 
-namespace Luilliarcec\LaravelUsernameGenerator\Concerns;
+namespace LeviZwannah\LaravelUsernameGenerator\Concerns;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Collection;
-use Luilliarcec\LaravelUsernameGenerator\Contracts\DriverContract;
-use Luilliarcec\LaravelUsernameGenerator\Drivers\Name;
-use Luilliarcec\LaravelUsernameGenerator\Exceptions\UsernameGeneratorException;
+use LeviZwannah\LaravelUsernameGenerator\Contracts\DriverContract;
+use LeviZwannah\LaravelUsernameGenerator\Drivers\Name;
+use LeviZwannah\LaravelUsernameGenerator\Exceptions\UsernameGeneratorException;
 
 trait HasUsername
 {
@@ -83,7 +83,7 @@ trait HasUsername
         }
 
         $lasted = $usernames
-            ->map(fn ($value) => intval(substr($value, $length)))
+            ->map(fn($value) => intval(substr($value, $length)))
             ->sortDesc()
             ->first();
 
@@ -114,7 +114,7 @@ trait HasUsername
     {
         return $this->getUsernameQuery()
             ->where($this->getUsernameColumn(), 'like', "{$username}%")
-            ->where(fn (Builder $query) => $this->getUsernameRegexSimilarityQuery($query, $username))
+            ->where(fn(Builder $query) => $this->getUsernameRegexSimilarityQuery($query, $username))
             ->pluck($this->getUsernameColumn());
     }
 

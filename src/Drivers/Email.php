@@ -1,9 +1,9 @@
 <?php
 
-namespace Luilliarcec\LaravelUsernameGenerator\Drivers;
+namespace LeviZwannah\LaravelUsernameGenerator\Drivers;
 
-use Luilliarcec\LaravelUsernameGenerator\Contracts\DriverContract;
-use Luilliarcec\LaravelUsernameGenerator\Exceptions\UsernameGeneratorException;
+use LeviZwannah\LaravelUsernameGenerator\Contracts\DriverContract;
+use LeviZwannah\LaravelUsernameGenerator\Exceptions\UsernameGeneratorException;
 
 class Email implements DriverContract
 {
